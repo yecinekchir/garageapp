@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>App Garage</title>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/garage.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="cbp-spmenu-push" onload="loadData()">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<div class="row">
+				<div class="col-md-1 col-md-offset-10" id="hideLeft"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+			</div>
+			<a href="#">Menu</a>
+			<a href="#">About</a>
+			<h6 id="version">v0.0.0</h6>
+		</nav>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<span class="navbar-brand" id="showLeft"><i class="glyphicon glyphicon-menu-hamburger"></i> </span>
+					<a class="navbar-brand" href="#">Garage App</a>
+				</div>
+				<ul class="nav navbar-nav">
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container" id="conteneur">
+			<div class="col" id="parcCol">
+				<div class="row" id="level1Row">
+					<table class="table table-bordered">
+						<thead>
+						<tr id="slotLevel1">
+						</tr>
+						</thead>
+						<tbody id="parkingLevel1">
+						</tbody>
+					</table>
+				</div>
+				<div class="row" id="level2Row">
+					<table class="table table-bordered">
+						<thead>
+						<tr id="slotLevel2">
+						</tr>
+						</thead>
+						<tbody id="parkingLevel2">
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="descCol" class="col">
+				<div id="plate"></div>
+				<div class="row">
+					<div class="col-md-4" id="startTime"></div>
+					<div class="col-md-8" id="endTime"></div>
+				</div>
+			</div>
+		</div>
+		<script src="js/classie.js"></script>
+		<script src="js/garage.js"></script>
+		<script type="text/javascript" src="data.json"></script>
+	</body>
+</html>
